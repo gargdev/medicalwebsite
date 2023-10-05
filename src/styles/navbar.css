@@ -1,0 +1,123 @@
+.nav-container.scrolled{
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: center;
+  z-index: 100;
+  transition: top 0.3s; 
+  height: 13%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition-duration: .9s;
+}
+
+
+/* Container for the entire navbar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.9%;
+    gap: 1rem;
+  }
+  
+  /* Styles for the navigation links */
+  .nav-links ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    cursor: pointer;
+    /* margin-top: 3%; */
+    color: #5a55fa;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .nav-links ul li:hover {
+    /* font-weight: 700; */
+    text-decoration: overline; /* Changed from overline for readability */
+    text-decoration-thickness: 3px;
+    color: #0021b3;
+  }
+  
+  /* Remove list styles from ul elements */
+  ul {
+    list-style: none;
+  }
+  
+  /* Styles for the "Get Appointment" button */
+  .get-btn {
+    border-radius: 10px;
+    background: #eeefff;
+    width: 161px;
+    height: 50px;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    outline: none;
+    border: none;
+    color: #032ff2;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -1.4%;
+  }
+  
+  .get-btn:hover {
+    background: #032ff2;
+    color: #eeefff;
+  }
+  
+  /* Styles for the menu icon */
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  /* Add styles to make the menu visible when .open class is applied */
+  .nav-links.open .nav-links ul{
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    right: 0; 
+    background-color: #ffffff;
+    z-index: 100; 
+  }
+  
+  /* Media query for screens with a maximum width of 1200px */
+  @media screen and (max-width: 1200px) {
+    /* Hide the Get Appointment button */
+    .nav-links{
+        display: none;
+    }
+    .get-btn {
+      display: none;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    /* Show the navigation menu when the menu icon is clicked */
+    .nav-links.open{
+      display: flex;
+      flex-direction: column;
+      top: 100%; 
+      right: 0; 
+      background-color: #ffffff;
+      z-index: 100;
+      color: #032ff2;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav{
+        gap: 0rem;
+    }
+  }
+  

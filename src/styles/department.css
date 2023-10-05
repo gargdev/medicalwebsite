@@ -1,0 +1,117 @@
+.department-parent{
+    background: #EEEFFF;
+    padding: 7rem;
+    flex-shrink: 0;
+}
+
+.department-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.department-left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+.btn-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.dept1,
+.dept2,
+.dept3{
+    width: 170px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    color: #5B5B5B;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.10);
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    border: 1px solid #032FF2;
+}
+
+.dept1:hover,
+.dept2:hover,
+.dept3:hover{
+        background-color: #032FF2;
+        color: #FFF;
+}
+
+.checkbtn{
+    width: 270px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #032FF2;
+    color: #FFF;
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.checkbtn:hover{
+        background: #FFF;
+        color: #032FF2;
+        border: 1px solid #032FF2;
+}
+
+
+
+.department-left h3{
+    color: #2B2E35;
+    font-family: Mukta;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px; /* 131.25% */
+}
+
+secondary-heading{
+    color: #5B5B5B;
+    font-family: Mukta;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+primarytitle{
+    color: #5B5B5B;
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.department-left p{
+    color: #5B5B5B;
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.department-left h5{
+    color: #5B5B5B;
+    font-family: Mukta;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+}

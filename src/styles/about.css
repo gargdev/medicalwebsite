@@ -1,0 +1,72 @@
+.about{
+    background: #EEEFFF; 
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-left{
+    margin-top: 5%;
+}
+.about-right{
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+.about-right h3{
+    color: #2B2E35;
+    font-family: Mukta;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-right p{
+    color: #5B5B5B;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-right h5{
+    color: #5B5B5B;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 225% */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.about-right button{
+    width: 270px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #032FF2;
+    color: #FFF;
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.about-right button:hover{
+    background-color: aliceblue;
+    color: #032FF2;
+    border: 1px solid #032FF2;
+}
+
+.about-right h5:hover{
+    transform: scale(1.09);
+    color: #032FF2;
+    font-weight: 700;
+}
